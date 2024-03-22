@@ -3,8 +3,8 @@ const prompt = require('prompt-sync')();
 //Program 1: Temperature Converter
 console.log("Program 1: Temperature Converter");
 let temp = prompt("Input a temperature to convert into Celsius: ");
-let ans = prompt("If you inputted the temperature in Kelvin input 1, if you inputted a temperature in Farenheit input 2: ");
-
+let ans = prompt("If you inputted the temperature in Kelvin input 1, if you inputted a temperature in Fahrenheit input 2: ");
+//
 if (ans == 1) {
     let cel = temp - 273.15
     console.log("You have inputted "+temp,"Kelvin as your temperature, that in Celsius would be :", cel +" degrees");
@@ -12,7 +12,7 @@ if (ans == 1) {
 
 else if (ans == 2) {
     let cel = (temp - 32)/1.8
-    console.log("You have inputted "+temp,"Farinheit as your temperature, that in Celsius would be :", cel +" degrees");
+    console.log("You have inputted "+temp,"Fahrenheit as your temperature, that in Celsius would be :", cel +" degrees");
 }
 
 else {
